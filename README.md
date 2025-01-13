@@ -8,5 +8,5 @@ This repository includes:
 * Technical practice in Python through [Advent of Code](https://github.com/harryfyjiswalker/Personal-Projects-2/tree/main/Python%20Practice/Advent%20of%20Code%20Solutions) and [Exercism](https://github.com/harryfyjiswalker/Personal-Projects-2/tree/main/Python%20Practice/Exercism%20Exercises).
     
 
-For work on sodium-ion batteries, please see [Na_ion_independent_ research](https://github.com/harryfyjiswalker/Na_ion_independent_research); repository documenting current research into ML applications to refugee support will be uploaded soon.
+For work on sodium-ion batteries, please see [Na_ion_independent_ research](https://github.com/harryfyjiswalker/Na_ion_independent_research); repository documenting current research into ML applications to refugee support will be uploaded when more complete.
 
