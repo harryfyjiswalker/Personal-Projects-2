@@ -1,10 +1,6 @@
 * Programmes to elucidate Na+ diffusion coefficient from EIS data.
-* 
 
-* Programmes for elucidating the Warburg coefficient from 
-Electrochemical Impedance Spectroscopy plots.(calculated as gradient 
-of plot of real impedance against ω^-1/2 for low-frequency region where 
-d(-Zimaginary)/d(Zreal) = 1)
-* This then allows elucidation of the Na+ diffusion coefficient, offering
-insight into the physical properties responsible for variation in rate
-performance
+* [CurvedEIS](https://github.com/harryfyjiswalker/Personal-Projects-2/blob/main/Part%20II%20Code/EIS%20Analysis/CurvedEIS.ipynb) visualises the EIS curves on axes of real vs imaginary impedance.
+* [EISAnglecalculator](https://github.com/harryfyjiswalker/Personal-Projects-2/blob/main/Part%20II%20Code/EIS%20Analysis/EISAnglecalculator.ipynb) identifies where the angle of the plot is 45&deg;: d(-Im(z))/d(Re(z)) = 1.
+* [BestWarburg](https://github.com/harryfyjiswalker/Personal-Projects-2/blob/main/Part%20II%20Code/EIS%20Analysis/BestWarburg.ipynb) then plots this region on axes of Re(z) vs ω^-1/2. The gradient of this linear plot is the Warburg coefficient.
+* The Warburg coefficient, alongside various constants and C, the concentration of Na+ ions, permits elucidation of the Na+ diffusion coefficient, the trend for which is visualised in [Diffusioncoefficients](https://github.com/harryfyjiswalker/Personal-Projects-2/blob/main/Part%20II%20Code/EIS%20Analysis/Diffusioncoefficients.ipynb).
