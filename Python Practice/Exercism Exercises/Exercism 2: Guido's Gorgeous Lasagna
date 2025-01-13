@@ -1,0 +1,12 @@
+EXPECTED_BAKE_TIME = 40
+PREPARATION_TIME = 2
+def bake_time_remaining(elapsed_bake_time):
+    """Calculating remaining baking time."""
+    return EXPECTED_BAKE_TIME - elapsed_bake_time
+    
+def preparation_time_in_minutes(number_of_layers):
+    """Calculating preparation time."""
+    return PREPARATION_TIME * number_of_layers
+def elapsed_time_in_minutes(number_of_layers, elapsed_bake_time):
+    """Combining the two to obtain time elapsed so far."""
+    return number_of_layers * PREPARATION_TIME + elapsed_bake_time

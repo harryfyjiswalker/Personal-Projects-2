@@ -1,0 +1,13 @@
+def is_armstrong_number(number):
+    # Convert the number to a list of digits
+    digits = [int(digit) for digit in str(number)]
+    
+    # Count the number of digits
+    n = len(digits)
+    
+    # Calculate the sum of each digit raised to the power of n
+    sum_of_powers = sum(digit ** n for digit in digits)
+    
+    # Check if the sum is equal to the original number
+    return sum_of_powers == number
+    

@@ -1,0 +1,26 @@
+"""Functions for calculating steps in exchanging currency.
+ 
+Python numbers documentation: https://docs.python.org/3/library/stdtypes.html#numeric-types-int-float-complex
+ 
+Overview of exchanging currency when travelling: https://www.compareremit.com/money-transfer-tips/guide-to-exchanging-currency-for-overseas-travel/
+"""
+def exchange_money(budget, exchange_rate):
+    return float(float(budget) / float(exchange_rate))
+
+def get_change(budget, exchanging_value):
+    return float(float(budget) - float(exchanging_value))
+
+def get_value_of_bills(denomination, number_of_bills):
+    return int(float(denomination) * float(number_of_bills))
+
+def get_number_of_bills(amount, denomination):
+    return int(float(amount)/float(denomination))
+
+def get_leftover_of_bills(amount, denomination):
+    return float(float(amount)%int(denomination))
+
+def exchangeable_value(budget, exchange_rate, spread, denomination):
+    fee_included = exchange_rate * (1 + spread / 100)
+    foreign_currency = budget / fee_included
+    max_value = (foreign_currency // denomination) * denomination
+    return int(max_value)

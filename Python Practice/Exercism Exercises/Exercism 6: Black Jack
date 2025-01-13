@@ -1,0 +1,66 @@
+"""Functions to help play and score a game of blackjack.
+ 
+How to play blackjack:    https://bicyclecards.com/how-to-play/blackjack/
+"Standard" playing cards: https://en.wikipedia.org/wiki/Standard_52-card_deck
+"""
+def value_of_card(card):
+    """Determine the scoring value of a card."""
+    if card == 'A':
+        return 1
+    if card in 'JQK':  # Check if card is in the string 'JQK'
+        return 10
+    if card.isdigit():  # Ensure card is a numeric string
+        return int(card)
+    return 0 
+def higher_card(card_one, card_two):
+    """Determine which card has a higher value in the hand."""
+    if value_of_card(card_one) > value_of_card(card_two):
+        return card_one
+    if value_of_card(card_one) < value_of_card(card_two):
+        return card_two
+    if value_of_card(card_one) == value_of_card(card_two):
+        return (card_one, card_two)
+    return 0
+    
+def value_of_ace(card_one, card_two):
+    """Calculate the most advantageous value for the ace card."""
+    def value_of_card(card):
+        """Determine the scoring value of a card."""
+        if card == 'A':
+            return 11 # If already in hand
+        if card in 'JQK':  # Check if card is in the string 'JQK'
+            return 10
+        if card.isdigit():  # Ensure card is a numeric string
+            return int(card)
+        return 0 
+            
+    if value_of_card(card_one) + value_of_card(card_two) <= 10:
+        return 11
+    return 1
+def is_blackjack(card_one, card_two):
+    """Determine if the hand is a 'natural' or 'blackjack'.
+ 
+    :param card_one, card_two: str - card dealt. See below for values.
+    :return: bool - is the hand is a blackjack (two cards worth 21).
+ 
+    1.  'J', 'Q', or 'K' (otherwise known as "face cards") = 10
+    2.  'A' (ace card) = 11 (if already in hand)
+    3.  '2' - '10' = numerical value.
+    """
+    def value_of_card_adjusted(card):
+        """Determine the scoring value of a card."""
+        if card == 'A':
+            return 11 # If already in hand
+        if card in 'JQK':  # Check if card is in the string 'JQK'
+            return 10
+        if card.isdigit():  # Ensure card is a numeric string
+            return int(card)
+        return 0 
+    return bool(value_of_card_adjusted(card_one) + value_of_card_adjusted(card_two) == 21)
+def can_split_pairs(card_one, card_two):
+    """Determine if a player can split their hand into two hands."""
+    return bool(value_of_card(card_one) == value_of_card(card_two))
+def can_double_down(card_one, card_two):
+    """Determine if a blackjack player can place a double down bet."""
+    total_value = value_of_card(card_one) + value_of_card(card_two)
+    return bool(9 <= total_value <= 11)
