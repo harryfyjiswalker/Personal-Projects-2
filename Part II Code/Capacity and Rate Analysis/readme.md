@@ -1,4 +1,9 @@
-* Various matplotlib programmes for visualisation of variation of
+* Matplotlib programmes for visualisation of variation of
 rate performance and discharge capacity with composition, cycle number,
 and synthesis temperature
+* [282552822cycle](https://github.com/harryfyjiswalker/Personal-Projects-2/blob/main/Part%20II%20Code/Capacity%20and%20Rate%20Analysis/282552822cycle.ipynb), [750CapCycle200](https://github.com/harryfyjiswalker/Personal-Projects-2/blob/main/Part%20II%20Code/Capacity%20and%20Rate%20Analysis/750CapCycle200%20(1).ipynb), [GCD750CycleNumber](https://github.com/harryfyjiswalker/Personal-Projects-2/blob/main/Part%20II%20Code/Capacity%20and%20Rate%20Analysis/GCD750CycleNumber.ipynb) visualise variation in capacity retention with
+chemical composition and synthesis temperature
+*
+
+
 
