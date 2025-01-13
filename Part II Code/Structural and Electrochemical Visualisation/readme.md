@@ -1,1 +1,1 @@
-Concurrent visualisation of structural and electrochemical properties, excluding rate performance. Illustrative of impact of structure on electrochemical performance.
+Concurrent visualisation of structural and electrochemical properties, with the exception of rate performance. Illustrative of impact of structure on electrochemical performance.
