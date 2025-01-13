@@ -1,7 +1,7 @@
 # Personal-Projects
 
 This repository includes:
-* Previous programmes written during my Master's (Part II) for electrochemical and structural analysis of Na-ion cathodes
+* Previous programmes written during my Master's (2023-24) for electrochemical and structural analysis of Na-ion cathodes
 * Documentation of work to improve grasp of ML theory & practice (DeepLearning.AI courses, Kaggle, Advent of Code etc.)
      - Current focus on improving skills in XGBoost and Named Entity Recognition for battery performance data extraction and analysis
 
