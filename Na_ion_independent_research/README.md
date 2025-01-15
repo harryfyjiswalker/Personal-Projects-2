@@ -8,14 +8,4 @@ Resulting questions I am investigating over coming months:
 
 
 
-Work into data mining techniques is documented [here](https://github.com/harryfyjiswalker/Na_ion_independent_research/tree/main/Data%20mining):
-* Code for [generation of training set](https://github.com/harryfyjiswalker/Na_ion_independent_research/tree/main/Data%20mining/Training%20Set%20Generation) comprising layered-oxide Na-ion battery compositions, puncutation, numbers, and prose for Named Entity Recognition.
-
-Work into electrochemical performance prediction is documented [here](https://github.com/harryfyjiswalker/Na_ion_independent_research/tree/main/Predictive%20Modelling).
-
-
-
-
-
-
  
