@@ -5,6 +5,6 @@ while True:
         print(sqrt(num))
     elif num < 0:
         print("Invalid number")
-    else:
+    elif num ==0:
         break
 print("Exiting...")
