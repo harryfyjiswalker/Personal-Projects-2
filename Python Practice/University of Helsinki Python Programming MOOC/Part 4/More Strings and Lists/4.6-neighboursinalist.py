@@ -1,11 +1,16 @@
 def longest_series_of_neighbours(list1):
-    length = []
+    lengthlist = []
+    length = 1
     for i in range(len(list1)-1):
-        if abs(list1[i-1]-list1[i])==1:
-            length[i].append(length[i-1] + 1)
+        list2 = float(list1[i]) + 1
+        list3 = float(list1[i]) - 1
+        if list1[i+1] == list2 or list1[i+1] == list3:
+            length +=1
         else:
-            length=0
-    return length
+            length = 1
+        lengthlist.append(length)
+    return max(lengthlist)
+        
 
 if __name__ == "__main__":
     my_list = [1, 2, 5, 7, 6, 5, 6, 3, 4, 1, 0]
